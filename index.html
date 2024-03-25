@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon-like Product Listing</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-5 mb-4">Product Listing</h1>
+      <!-- Filter options -->
+      <div class="row mb-4">
+        <div class="col-md-3">
+          <div class="filter">
+            <h4>Filter By:</h4>
+            <!-- Category filter -->
+            <div class="form-group">
+              <label for="category">Category:</label>
+              <select class="form-control" id="category">
+                <option>All</option>
+                <option>Electronics</option>
+                <option>Clothing</option>
+                <option>Home & Kitchen</option>
+                <option value="">Men's Fashion</option>
+                <option value="">Women's Fashion</option>
+                <option value="">Sports</option>
+                <option value="">Movies and entertainment</option>
+                <!-- Add more categories as needed -->
+              </select>
+            </div>
+            <!-- Price range filter -->
+            <div class="form-group">
+              <label for="price">Price Range:</label>
+              <input
+                type="range"
+                class="form-control-range"
+                id="price"
+                min="0"
+                max="1000"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Product cards -->
+        <div class="col-md-9">
+          <div class="row">
+            <!-- Product card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img src="img2.jpeg" class="card-img-top" alt="Product 1" />
+                <div class="card-body">
+                  <h5 class="card-title">Lounge Chair</h5>
+                  <p class="card-text">
+                    My Art Design Faux Leather - Modern Swivel Lounge Chair With Hydraulic Lift For Home Office Hotel Cafe (Grey)
+                    </p>
+                  <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img src="img1.jpeg" class="card-img-top" alt="Product 1" />
+                <div class="card-body">
+                  <h5 class="card-title">DuoPods</h5>
+                  <p class="card-text">
+                    Mivi DuoPods i7 [Latest] Earbuds - Step into The 3rd Dimension of Sound with 3D Soundstage, High Fidelity Drivers, Advanced Audio Codec for Lossless Audio & More-Pearl Black
+                  </p>
+                  <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img src="img3.jpeg" class="card-img-top" alt="Product 1" />
+                <div class="card-body">
+                  <h5 class="card-title">Sofa Cum Bed</h5>
+                  <p class="card-text">
+                    Homevibes 2 Seater Engage Premium Fabric Sofa |Stylish and Comfortable Living Room Furniture
+                  </p>
+                  <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add more product cards as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
